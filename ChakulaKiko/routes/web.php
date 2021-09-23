@@ -14,5 +14,29 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend/home');
+});
+
+Route::get('/contact', function () {
+    return view('frontend/contactus');
+});
+
+Route::get('/ourservices', function () {
+    return view('frontend/ourservices');
+});
+
+Route::get('/products', function () {
+    return view('frontend/products');
+});
+
+Route::get('/farmer/orders', function () {
+    return view('adminend/examples/orders');
+});
+
+Route::get('/farmer/profile', function () {
+    return view('adminend/examples/profile');
+});
+
+Route::get('/farmer/addproduct', function () {
+    return view('adminend/examples/addproduct');
 });
